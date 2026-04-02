@@ -42,5 +42,7 @@ typedef struct{
 
 void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* saida);//Concatena todos os arquivos citados em char* Arquivos, n é o numero de arquivos citados
 
+int verificador_de_inteiro(void);//Verifica se a opção digitada é int pra evitar looping infinito
 
 #endif
+

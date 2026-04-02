@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "mrlib.h"
 #include "TRE_LIB.H"
 
 void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* saida){
@@ -40,4 +39,31 @@ void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* said
 
 fclose(arquivo_final);
 
+
+
+}
+int verificador_de_inteiro(void)
+
+{
+    int numero;
+    int sucesso;
+    int c;
+
+    while (1)
+    {
+        sucesso = scanf("%d", &numero);
+
+        if (sucesso == 1)
+        {
+            while ((c = getchar()) != '\n' && c != EOF)
+                ;
+            return numero;
+        }
+        else
+        {
+            printf("Entrada invalida. Digite apenas numeros.\n---> ");
+            while ((c = getchar()) != '\n' && c != EOF)
+                ;
+        }
+    }
 }

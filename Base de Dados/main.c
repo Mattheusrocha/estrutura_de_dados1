@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <windows.h>
-#include "mrlib.h"
 #include "TRE_LIB.h"
 
 int main()
