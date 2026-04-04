@@ -40,9 +40,23 @@ typedef struct{
 
 }Dados;
 
+typedef struct {
+    char estado[30];
+    char nomearquivo[40];
+    char chave[40];
+}Indices;
+
 void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* saida);//Concatena todos os arquivos citados em char* Arquivos, n é o numero de arquivos citados
 
 int verificador_de_inteiro(void);//Verifica se a opção digitada é int pra evitar looping infinito
+
+Indices criar_arq_e_chave();
+
+void gerar_relatorio_de_ocorrencias_por_municipio1(const char *arquivos[], int quant_arquivos);
+
+void gerar_relatorio_de_ocorrencias_por_municipio2(const char *arquivos[], int quant_arquivos);
+
+
 
 #endif
 

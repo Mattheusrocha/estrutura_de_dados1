@@ -72,8 +72,8 @@ int main()
         break;
 
         case 3:
-        {
-            printf("\n\n------------Opcao em desenvolvimento\n\n");
+        { 
+            gerar_relatorio_de_ocorrencias_por_municipio1(arquivos, (sizeof(arquivos)/4));
         }
         break;
         }
