@@ -67,3 +67,64 @@ int verificador_de_inteiro(void)
         }
     }
 }
+
+
+int contar_linhas(const char* arquivo) {
+    FILE* f = fopen(arquivo, "r");
+    char linha[4096];
+    int count = 0;
+    char sigla[4096];
+
+    fgets(linha, sizeof(linha), f); 
+
+    while (fgets(linha, sizeof(linha), f)) {
+        char *sigla = strtok(linha, f)
+        
+        count++;
+    }
+
+    fclose(f);
+    return count;
+}
+
+int somatoria(int col){
+    int linha;
+    int aux = 0;
+    for( int l = 1;l <= contar_linhas(TRE_Nacional.csv); l++){
+        aux += matriz[l][col];
+    }
+    return aux;
+}
+
+ typedef struct Dados{
+
+        int julgados_2026 ;
+        int casos_novos_2026;
+        int dessobrestados_2026;
+        int suspensos_2026;
+        int julgm2_a;
+        int distm2_a;
+        int suspm2_a;
+        int julgm2_ant;
+        int distm2_ant;
+        int suspm2_ant;
+        int desom2_ant;
+        int julgm4_a;
+        int distm4_a;
+        int suspm4_a;
+        int julgm4_b;
+        int distm4_b;
+        int suspm4_b;
+
+    }DADOS
+    typedef struct siglas{
+        char sigla [50];
+        Dados
+
+
+    }
+
+int selecionador (char arq){
+
+   
+}
