@@ -1,6 +1,9 @@
 #ifndef TRE_LIB_H
 #define TRE_LIB_H
+
+#include <stdio.h>
 #define ERRO 1
+#define MAX_LINHA 8192
 
 typedef struct{
 
@@ -43,6 +46,31 @@ typedef struct{
 void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* saida);//Concatena todos os arquivos citados em char* Arquivos, n é o numero de arquivos citados
 
 int verificador_de_inteiro(void);//Verifica se a opção digitada é int pra evitar looping infinito
+
+typedef struct {
+    char sigla[50];
+    long long julgados_2026;
+    long long casos_novos;
+    long long suspensos;
+    long long dessobrestados;
+    long long julgm2_a;
+    long long distm2_a;
+    long long suspm2_a;
+    long long julgm2_ant;
+    long long distm2_ant;
+    long long suspm2_ant;
+    long long desom2_ant;
+    long long julgm4_a;
+    long long distm4_a;
+    long long suspm4_a;
+    long long julgm4_b;
+    long long distm4_b;
+    long long suspm4_b;
+} Tribunal;
+
+long long tranforma_long(char *str);
+void gravar_tribunal(FILE *fout, Tribunal *t);
+void gerar_resumo_metas(void);
 
 #endif
 

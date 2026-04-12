@@ -65,9 +65,7 @@ int main()
 
         case 2:
         {
-            printf("\n\n-----------Opcao em desenvolvimento\n\n");
-            //Para |||HIGOR SAFADO GREGORIO||| - Utiliza esse campo pra colocar a parte das funcoes de calculo
-            //Pra todas as funções utilize o arquivo chamado "TRE_Nacional", ta concatenado pra uso interno
+            gerar_resumo_metas();
         }
         break;
 
