@@ -338,7 +338,7 @@ void gerar_resumo(const char *arquivos[], int quant_arquivos) {
             dados_resumo.Meta1 = 0;
         }
         else {
-            dados_resumo.Meta1 = ((dados_resumo.julgados_2026)/(dados_resumo.casos_novos_2026+dados_resumo.dessobrestados_2026-dados_resumo.suspensos_2026))*100;
+            dados_resumo.Meta1 = ((dados_resumo.julgados_2026)/(dados_resumo.casos_novos_2026+dados_resumo.dessobrestados_2026-dados_resumo.suspensos_2026))*100.0;
         }
 
         if (dados_resumo.distm2_a-dados_resumo.suspm2_a == 0)
@@ -346,14 +346,14 @@ void gerar_resumo(const char *arquivos[], int quant_arquivos) {
             dados_resumo.Meta2A = 0;
         }
         else {
-            dados_resumo.Meta2A = ((dados_resumo.julgm2_a)/(dados_resumo.distm2_a-dados_resumo.suspm2_a))*(1000/7);
+            dados_resumo.Meta2A = ((dados_resumo.julgm2_a)/(dados_resumo.distm2_a-dados_resumo.suspm2_a))*(1000.0/7.0);
         }
         if ((dados_resumo.distm2_ant-dados_resumo.suspm2_ant-dados_resumo.desom2_ant) == 0)
         {
            dados_resumo.Meta2Ant = 0;
         }
         else {
-            dados_resumo.Meta2Ant = ((dados_resumo.julgm2_ant)/(dados_resumo.distm2_ant-dados_resumo.suspm2_ant-dados_resumo.desom2_ant))*100;
+            dados_resumo.Meta2Ant = ((dados_resumo.julgm2_ant)/(dados_resumo.distm2_ant-dados_resumo.suspm2_ant-dados_resumo.desom2_ant))*100.0;
         }
         if ((dados_resumo.julgm4_a)/(dados_resumo.distm4_a-dados_resumo.suspm4_a) == 0)
         {
