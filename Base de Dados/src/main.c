@@ -24,7 +24,7 @@ int main()
         printf("|                    O que gostaria de fazer?                  |\n");
         printf("================================================================\n\n");
 
-        printf("0 -> Fechar Programa \n1 -> Concatenar todos os arquivos estaduais \n2 -> Gerar Resumo de medidas\n3 -> Relatorio de Ocorrencias por Estado\n\n-->");
+        printf("0 -> Fechar Programa \n1 -> Concatenar todos os arquivos estaduais \n2 -> Gerar Resumo de medidas\n3 -> Relatorio de Ocorrencias por Municipio\n\n-->");
         opcao = verificador_de_inteiro();
 
         system("cls");
@@ -65,9 +65,7 @@ int main()
 
         case 2:
         {
-            printf("\n\n-----------Opcao em desenvolvimento\n\n");
-            //Para |||HIGOR SAFADO GREGORIO||| - Utiliza esse campo pra colocar a parte das funcoes de calculo
-            //Pra todas as funções utilize o arquivo chamado "TRE_Nacional", ta concatenado pra uso interno
+            gerar_resumo(arquivos, (sizeof(arquivos)/4));
         }
         break;
 
