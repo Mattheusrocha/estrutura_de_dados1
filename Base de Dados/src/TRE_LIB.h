@@ -48,7 +48,6 @@ typedef struct {
 }Indices;
 
 typedef struct {
-    char sigla[10];
     double julgados_2026;
     double casos_novos_2026;
     double suspensos_2026;
@@ -74,26 +73,6 @@ typedef struct {
     double Meta4B;
 } Tribunal;
 
-typedef struct {
-    char sigla[50];
-    double julgados_2026;
-    double casos_novos;
-    double suspensos;
-    double dessobrestados;
-    double julgm2_a;
-    double distm2_a;
-    double suspm2_a;
-    double julgm2_ant;
-    double distm2_ant;
-    double suspm2_ant;
-    double desom2_ant;
-    double julgm4_a;
-    double distm4_a;
-    double suspm4_a;
-    double julgm4_b;
-    double distm4_b;
-    double suspm4_b;
-} Tribunal2;
 
 void concatenar_csv(const char* arquivos[], int quant_arquivos, const char* saida);//Concatena todos os arquivos citados em char* Arquivos, n é o numero de arquivos citados
 
